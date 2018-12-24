@@ -1,4 +1,14 @@
 public class DoublingTest {
+    // public static double timeTrial(int N) {
+    //     int Max = 1000000;
+    //     int[] a = new int[N];
+    //     for(int i = 0; i < N; i++) {
+    //         a[i] = StdRandom.uniform(-Max, Max);
+    //     }
+    //     StopWatch timer = new StopWatch();
+    //     int cnt = ThreeSum.count(a);
+    //     return timer.elapsedTime();
+    // }
     public static double timeTrial(int N) {
         int Max = 1000000;
         int[] a = new int[N];
@@ -6,7 +16,7 @@ public class DoublingTest {
             a[i] = StdRandom.uniform(-Max, Max);
         }
         StopWatch timer = new StopWatch();
-        int cnt = ThreeSum.count(a);
+        int cnt = ThreeSumFast.count(a);
         return timer.elapsedTime();
     }
     public static void main(String[] args) {
